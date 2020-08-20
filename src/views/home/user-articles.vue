@@ -14,8 +14,6 @@ export default class extends Vue {
   private isCollapse: boolean = false
   private dataList: any[] = []
   private async mounted() {
-    const a = 1
-    a = 2
     const { data } = await this.$BaseService.getJson()
     this.dataList = data.list
   }
