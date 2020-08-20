@@ -2,18 +2,19 @@ import axios from 'axios'
 
 export default class Service {
   public http: any
-  public constructor(apiPath: string) {
-    this.createHttp(apiPath)
+  public constructor(apiPath: string, autoConfigs: any) {
+    this.createHttp(apiPath, autoConfigs)
   }
 
-  public createHttp(apiPath: string) {
+  public createHttp(apiPath: string, autoConfigs: any) {
     this.http = axios.create({
       baseURL: apiPath,
       timeout: 5000,
       headers: {
         'X-Requested-With': 'XMLHttpRequest'
       },
-      withCredentials: true
+      // withCredentials: true
+      ...autoConfigs
     })
 
     // 添加请求拦截器

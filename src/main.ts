@@ -6,7 +6,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
-import * as services from './services'
+import Interfaces from './services/interfaces'
 import '../mock'
 
 Vue.config.productionTip = false
@@ -16,7 +16,7 @@ new Vue({
   router,
   store,
   provide: {
-    ...services
+    ...Interfaces
   },
   render: h => h(App)
 }).$mount('#app')
