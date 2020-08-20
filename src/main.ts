@@ -1,13 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
 import ElementUI from 'element-ui'
-import './assets/css/reset.css'
-import 'element-ui/lib/theme-chalk/index.css'
-import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import Interfaces from './services/interfaces'
+import './assets/css/reset.css'
+import 'element-ui/lib/theme-chalk/index.css'
+import './registerServiceWorker'
 import '../mock'
+import './components'
+import './filters'
 
 Vue.config.productionTip = false
 
