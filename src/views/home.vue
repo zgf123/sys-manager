@@ -32,5 +32,6 @@ export default class Home extends Vue {}
 }
 .main {
   background: #f4f6fc;
+  height: calc(100vh - 60px);
 }
 </style>

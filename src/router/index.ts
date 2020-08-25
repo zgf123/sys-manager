@@ -25,6 +25,11 @@ const routes: RouteConfig[] = [
         path: 'user-articles',
         name: 'user-articles',
         component: () => import('../views/home/user-articles.vue')
+      },
+      {
+        path: 'pre-code',
+        name: 'pre-code',
+        component: () => import('../views/home/pre-code.vue')
       }
     ]
   }
