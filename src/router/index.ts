@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/home.vue'
+import Typescript from '../views/home/typescript.vue'
 
 Vue.use(VueRouter)
 
@@ -30,6 +31,11 @@ const routes: RouteConfig[] = [
         path: 'pre-code',
         name: 'pre-code',
         component: () => import('../views/home/pre-code.vue')
+      },
+      {
+        path: 'typescript',
+        name: 'typescript',
+        component: Typescript
       }
     ]
   }

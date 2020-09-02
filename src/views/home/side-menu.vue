@@ -1,7 +1,7 @@
 <template>
   <el-aside class="aside" :style="{ width: '200px' }">
     <el-menu :default-active="defaultActive" class="aside-menu" :collapse="isCollapse" router>
-      <el-submenu index="/home">
+      <el-submenu index="user">
         <template slot="title">
           <i class="el-icon-menu"></i>
           <span slot="title">菜单一</span>
@@ -13,6 +13,12 @@
         <template slot="title">
           <i class="el-icon-document-checked"></i>
           <span slot="title">Pre Code</span>
+        </template>
+      </el-menu-item>
+      <el-menu-item index="/home/typescript">
+        <template slot="title">
+          <i class="el-icon-bicycle"></i>
+          <span slot="title">TypeScript</span>
         </template>
       </el-menu-item>
     </el-menu>
